@@ -1,0 +1,465 @@
+:root{
+  --base-color: white;
+  --text-color: black;
+  --card-text-color:black;
+  --nav-text-color: rgb(117, 95, 241);
+  --card-color: gray;
+  --border-color:aliceblue;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --text-color: white;
+  --card-text-color:black;
+  --nav-text-color: rgb(117, 95, 241);
+  --card-color: gray;
+  --border-color:aliceblue;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppinp", sans-serif;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+nav{
+  border-bottom-right-radius: 13px;
+    animation: fade-down 0.5s;
+}
+
+
+.navbar-brand{
+  font-style: italic;
+  color: var(--nav-text-color);
+}
+.nav-link:hover{
+    transition: ease-out 1s;
+    text-decoration: underline 5px var(--border-color);
+}
+#theme-switch{
+  height: 30px;
+  width: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#theme-switch i{
+ fill: var(--border-color);
+}
+#theme-switch i:last-child {
+  display: none;
+}
+.darkmode #theme-switch i:first-child{
+  display: none;
+}
+.darkmode #theme-switch i:last-child{
+  display: block;
+}
+body{
+  background-color: var(--base-color);
+}
+.body{
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  background-color: var(--base-color);
+  animation: fade-down 0.5s;
+}
+.wrapper{
+  margin: 60px auto;
+  width: 96%;
+}
+img{
+  width:60vh;
+  height: 60vh;
+  object-fit: cover;
+  float: left;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.text-box h1{
+  color:  var(--nav-text-color);
+  font-size: 55px;
+}
+.text-box h2{
+  color:  var(--nav-text-color);
+  font-size: 45px;
+}
+.text-box p{
+  font-size: 17px;
+}
+
+
+.middle{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7%;
+  justify-content: center;
+  align-items: center;
+  animation: fade-down 0.5s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40% ;
+}
+.box{
+  display: flex;
+  width: 35vh;
+  height: 35vh;
+  margin-top: 5%;
+  background-color:  var(--border-color);
+  border-radius: 2.5rem;
+}
+.inbox{
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+}
+
+.box:hover{
+background-color: var(--base-color);
+  box-shadow: 10px 10px 15px rgb(117, 95, 241);
+  transform: scale(1.1);
+  gap: 9%;
+    transition: ease-out 500ms;
+}
+
+.toolstuff{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    animation: fade-down 0.5s;
+     animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40% ;
+}
+.tools{
+  display: flex;
+  width: 17vh;
+  height: 7vh;
+  background-color: var(--nav-text-color);
+  margin-top: 3%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2% 2%;
+  color: var(--base-color);
+}
+.fa-toolbox,.fa-chart-simple,.fa-user-tie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vh;
+  height: 5vh;
+  color: var(--text-color);
+  border-radius: 15px;
+}
+.tools:hover{
+   color: var(--text-color);
+   transition: ease-out 1s;
+   
+}
+.fa-toolbox:hover{
+  color: var(--base-color);
+  background-color: var(--text-color);
+  transition: ease-out 1s;
+}
+.fa-chart-simple:hover{
+  color: var(--base-color);
+  background-color: var(--text-color);
+  transition: ease-out 1s;
+}
+.fa-user-tie:hover{
+  color: var(--base-color);
+  background-color: var(--text-color);
+  transition: ease-out 1s;
+}
+.mainprog{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+    animation: fade-down 0.5s;
+     animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40% ;
+}
+.mainprog01{
+   display: flex;
+   flex-direction: column;
+  width: 45vh;
+  height: 45vh;
+  margin-top: 5%;
+  border-radius: 2.5rem;
+  background-color: var(--border-color);
+ }
+
+.progress{
+  display: flex;
+  width: 40vh;
+  margin: 5%;
+}
+.skillname{
+  margin-top: 7%;
+  margin-left: 10%;
+}
+
+.mainprog01:hover{
+  background-color: var(--border-color);
+  box-shadow: 10px 10px 15px rgb(117, 95, 241);
+  transform: scale(1.1);
+  transition: ease-out 500ms;
+}
+@keyframes appear1{
+  from{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.container{
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+   animation: fade-down 0.5s;
+     animation: appear1 linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40% ;
+}
+.card-container{
+  display: grid;
+  row-gap: 4.5rem;
+}
+.card-art{
+  position: relative;
+  overflow: hidden;
+}
+.card-img{
+  width: 330px;
+  border-radius: 1.5rem;
+}
+.card-data{
+  width: 280px;
+  background-color: var(--border-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+.card-desc{
+  display: block;
+  font-size: small;
+  margin-bottom: .25rem;
+}
+.card-tit{
+  font-size: large;
+  font-weight: 700;
+  color: var(--card-text-color);
+  margin-bottom: .75rem;
+}
+.card-btt{
+  text-decoration: none;
+  font-size: small;
+  font-weight: 500;
+  color: var(--card-color);
+}
+.card-btt:hover{
+  text-decoration: underline;
+}
+.card-art:hover .card-data{
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.card-art:hover{
+  animation: remove-overflow 2s forwards;
+}
+
+.card-art:not(:hover){
+  animation: show-overflow 2s forwards;
+}
+.card-art:not(:hover) .card-data{
+  animation: remove-data 1s forwards;
+}
+@keyframes show-data{
+  50%{
+    transform: translateY(-10rem);
+  }
+  100%{
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow{
+  to{
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data{
+  0%{
+    transform: translateY(-7rem);
+  }
+  50%{
+    transform: translateY(-10rem);
+  }
+  100%{
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow{
+  0%{
+    overflow: initial;
+    pointer-events: none;
+  }
+  50%{
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .card-data{
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width:740px) {
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .container{
+    height: 100vh;
+  }
+
+  .card-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+footer{
+  width: 100%;
+  max-width: auto;
+  height: 85vh;
+  background-color: black;
+}
+.comment-box{
+  margin-left: 2%;
+  width: 428px;
+   animation: fade-down 0.5s;
+     animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40% ;
+}
+.comment-box h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.comment-box input{
+  width: 60vh;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: var(--border-color);
+  border: 1px solid gainsboro;
+}
+.comment-box input::placeholder {
+  color: var(--nav-text-color);
+}
+.comment-box textarea::placeholder
+.comment-box input:focus{
+  border: 15px 15px var(--text-color);
+  outline: 0;
+}
+.comment-box textarea{
+  background-color: var(--border-color);
+  width: 60vh;
+  height: 150px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+.comment-box button{
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: .50rem;
+  background-color: var(--nav-text-color);
+  color: var(--base-color);
+}
+.mainsoc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  margin-top: 5%;
+   animation: fade-down 0.5s;
+     animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 10% ;
+}
+
+.fa-brands{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 2.5rem;
+  background-color: var(--border-color);
+  color:black;
+}
+.fa-brands:hover{
+  width: 5vh;
+  height: 5vh;
+  background-color: var(--nav-text-color);
+  color: var(--border-color);
+  transition: ease-out 1s;
+}
