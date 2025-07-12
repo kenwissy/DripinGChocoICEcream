@@ -111,6 +111,7 @@ img{
 }
 .text-box p{
   font-size: 17px;
+  color:var(--text-color);
 }
 
 
