@@ -83,6 +83,7 @@ body{
   background-color: var(--base-color);
 }
 .body{
+  margin-top: 1%;
   display: flex;
   background-color: var(--base-color);
  
