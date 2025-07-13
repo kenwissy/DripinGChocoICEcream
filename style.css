@@ -394,9 +394,6 @@ footer{
   margin-left: 1%;
   width: 400px;
    animation: fade-down 0.5s;
-     animation: appear linear;
-  animation-timeline: view();
-  animation-range:entry 0% cover 40% ;
 }
 .comment-box h2{
   font-size: 20px;
@@ -445,9 +442,6 @@ footer{
   gap: 3%;
   margin-top: 5%;
    animation: fade-down 0.5s;
-     animation: appear linear;
-  animation-timeline: view();
-  animation-range:entry 0% cover 10% ;
 }
 
 .fa-brands{
