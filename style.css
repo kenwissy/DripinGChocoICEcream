@@ -524,8 +524,9 @@ footer{
 
 @media screen and (max-width: 390px) {
   .comment-box{
-  margin-left: 2%;
+  margin-left: 1%;
   width: 400px;
+  box-sizing: border-box;
    animation: fade-down 0.5s;
 }
 .comment-box h2{
@@ -534,6 +535,7 @@ footer{
   color: var(--border-color);
 }
 .comment-box input{
+  margin-left:1%;
   width: 100%;
   max-width: 350px;
   height: 50px;
@@ -552,9 +554,11 @@ footer{
   outline: 0;
 }
 .comment-box textarea{
+  margin-left:1%;
   background-color: var(--border-color);
   width: 100%;
   max-width: 350px;
+  box-sizing: border-box;
   height: 150px;
   padding: 15px 20px;
   margin-bottom: 10px;
