@@ -359,7 +359,7 @@ background-color: var(--border-color);
 
 @media screen and (max-width: 340px) {
   .container{
-    margin-inline: 1rem;
+    margin-inline: 3rem;
   }
 
   .card-data{
@@ -378,11 +378,95 @@ background-color: var(--border-color);
 @media screen and (min-width: 1120px) {
   .container{
     height: 100vh;
+    margin_inline:3rem;
   }
 
   .card-container{
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+@media  screen and (max-width: 390px) {
+  .container{
+  display: grid;
+  place-items: center;
+  margin-inline: -0.1rem;
+  padding-block: 2.5rem;
+   animation: fade-down 0.5s;
+     animation: appear1 linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 10% ;
+}
+.card-container{
+  display: grid;
+  row-gap: 2.5rem;
+}
+.card-art{
+  position: relative;
+  overflow: hidden;
+}
+.card-img{
+  width: 300px;
+  border-radius: 1.5rem;
+}
+.card-data{
+  width: 260px;
+  background-color: var(--border-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -4.5rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+.card-desc{
+  display: block;
+  font-size: small;
+  margin-bottom: .25rem;
+}
+.card-tit{
+  font-size: large;
+  font-weight: 700;
+  color: var(--card-text-color);
+  margin-bottom: .75rem;
+}
+.card-btt{
+  text-decoration: none;
+  font-size: small;
+  font-weight: 500;
+  color: var(--card-color);
+}
+
+.mainprog01{
+   display: flex;
+   flex-direction: column;
+  width: 40vh;
+  height: 40vh;
+  margin-top: 5%;
+  border-radius: 2.5rem;
+  background-color: var(--border-color);
+ }
+
+.progress{
+  display: flex;
+  width: 35vh;
+  margin: 5%;
+}
+.skillname{
+  margin-top: 7%;
+  margin-left: 10%;
+}
+
+.mainprog01:hover{
+  background-color: var(--border-color);
+  box-shadow: 10px 10px 15px rgb(117, 95, 241);
+  transform: scale(1.1);
+  transition: ease-out 500ms;
+}
 }
 
 footer{
@@ -399,6 +483,7 @@ footer{
 .comment-box h2{
   font-size: 20px;
   margin-bottom: 15px;
+  color: var(--border-color);
 }
 .comment-box input{
   width: 100%;
@@ -436,6 +521,56 @@ footer{
   background-color: var(--nav-text-color);
   color: var(--base-color);
 }
+
+@media screen and (max-width: 390px) {
+  .comment-box{
+  margin-left: 2%;
+  width: 400px;
+   animation: fade-down 0.5s;
+}
+.comment-box h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--border-color);
+}
+.comment-box input{
+  width: 100%;
+  max-width: 370px;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: var(--border-color);
+  border: 1px solid gainsboro;
+}
+.comment-box input::placeholder {
+  color: var(--nav-text-color);
+}
+.comment-box textarea::placeholder
+.comment-box input:focus{
+  border: 15px 15px var(--text-color);
+  outline: 0;
+}
+.comment-box textarea{
+  background-color: var(--border-color);
+  width: 100%;
+  max-width: 370px;
+  height: 150px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+.comment-box button{
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: .50rem;
+  background-color: var(--nav-text-color);
+  color: var(--base-color);
+}
+}
+
 .mainsoc{
   display: flex;
   justify-content: center;
