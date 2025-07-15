@@ -389,7 +389,7 @@ background-color: var(--border-color);
 @media  screen and (max-width: 390px) {
   .wrapper{
   width:96%;
-  max-width:1100px;
+  max-width:380px;
   margin: 60px auto;
 }
   img{
